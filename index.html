@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./buttons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.jpg" />
+    <title>Buttons</title>
+  </head>
+  <body>
+    <section class="openInterect">
+      <div class="components">
+        <h1>Teste os botões</h1>
+        <span>
+          Interaja com os botões e observe a mudança de aparência e de cursores
+        </span>
+        <div class="box-buttons">
+          <button onclick="openBoxButtons()">Interaja comigo</button>
+          <button id="disabled" disabled>Interaja comigo</button>
+          <button onclick="closeBoxButtons()">
+            <img src="./images/Vector.png" alt="hambuguer-icon" />
+            Tire a interação
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <main id="buttonInteract">
+      <section class="functions">
+        <div class="function">DEFAULT</div>
+        <div class="function">HOVER</div>
+        <div class="function">FOCUS</div>
+        <div class="function">DISABLED</div>
+        <div class="function">LOADING</div>
+        <div class="function">MOVABLE</div>
+      </section>
+
+      <section class="nameComponents">
+        <div class="names">BOTÃO PRIMÁRIO</div>
+        <div class="names secundaryName">BOTÃO SECUNDÁRIO</div>
+        <div class="names tertiaryName">BOTÃO TERCIÁRIO</div>
+        <div class="names">CURSOR</div>
+      </section>
+
+      <section class="box-components">
+        <div class="comps primary">
+          <button>DEFAULT PRIMARY</button>
+          <button>HOVER PRIMARY</button>
+          <button>FOCUS PRIMARY</button>
+          <button disabled>DISABLED PRIMARY</button>
+          <button>
+            <img
+              class="loading"
+              src="./images/loading.png"
+              alt="Image Loading"
+            />
+            LOADING PRIMARY
+          </button>
+          <button>
+            <img src="./images/hamburguerIcon.png" alt="hambuguer-icon" />
+            MOVABLE PRIMARY
+          </button>
+        </div>
+
+        <div class="comps secondary">
+          <button>DEFAULT SECONDARY</button>
+          <button>HOVER SECONDARY</button>
+          <button>FOCUS SECONDARY</button>
+          <button disabled>DISABLED SECONDARY</button>
+          <button>
+            <img class="loading" src="./images/loading.png" alt="loading" />
+            LOADING SECONDARY
+          </button>
+          <button>
+            <img src="./images/hamburguerIcon.png" alt="hambuguer-icon" />
+            MOVABLE SECONDARY
+          </button>
+        </div>
+
+        <div class="comps tertiary">
+          <button>DEFAULT TERTIARY</button>
+          <button>HOVER TERTIARY</button>
+          <button>FOCUS TERTIARY</button>
+          <button disabled>DISABLED TERTIARY</button>
+          <button>
+            <img class="loading" src="./images/loading.png" alt="loading" />
+            LOADING TERTIARY
+          </button>
+          <button>
+            <img src="./images/hamburguerIcon.png" alt="hambuguer-icon" />
+            MOVABLE TERTIARY
+          </button>
+        </div>
+
+        <div class="cursors">
+          <div>
+            <img src="./images/cursorDefault.png" alt="cursorDefault" />
+          </div>
+          <div>
+            <img src="./images/cursorHover.png" alt="cursorHover" />
+          </div>
+          <div>
+            <img src="./images/cursorFocus.png" alt="cursorFocus" />
+          </div>
+          <div>
+            <img src="./images/cursorDisabled.png" alt="cursorDisabled" />
+          </div>
+          <div>
+            <img src="./images/cursorLoading.png" alt="cursorLoading" />
+          </div>
+          <div>
+            <img src="./images/cursorMovable.png" alt="cursorMovable" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
